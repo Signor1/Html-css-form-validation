@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>Login &#x1F511;</h1>
+        <form action="">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="demo@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required>
+                <span>&#x1F4E7;</span>
+                <div class="success">Email is correct &#x2705;</div>
+                <div class="error">Email format is wrong &#x274C;</div>
+            </div>
+            <div class="password">
+                <label for="password">Password </label>
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    placeholder="Minimum of 8 characters" required
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <span>&#x1F510;</span>
+                <div class="success">Password strength is okay &#x2705;</div>
+                <div class="error">Password strength is weak &#x274C;</div>
+            </div>
+            <div class="btn">
+                <button type="submit">Continue</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
